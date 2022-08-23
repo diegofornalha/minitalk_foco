@@ -6,13 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:04:13 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:04:13 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:26:46 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//compare byte string
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

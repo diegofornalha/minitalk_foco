@@ -6,13 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:02:51 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:02:51 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:27:41 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//size-bounded string concatenation
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

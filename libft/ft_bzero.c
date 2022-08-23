@@ -6,13 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:04:53 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:04:53 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:26:58 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//write zeroes to a n byte string
 
 void	ft_bzero(void *s, size_t n)
 {

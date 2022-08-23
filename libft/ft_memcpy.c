@@ -6,13 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:04:08 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:04:09 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:26:46 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//copy byte string
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

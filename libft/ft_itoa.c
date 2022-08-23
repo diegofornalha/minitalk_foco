@@ -6,13 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:04:22 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:04:23 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:26:55 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// Turn a integer number in a numeric string
 
 char	*ft_itoa(int n)
 {

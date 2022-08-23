@@ -6,13 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:02:29 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:02:30 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:27:42 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//compare strings of n lenght
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

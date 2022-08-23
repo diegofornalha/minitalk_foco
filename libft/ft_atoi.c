@@ -6,13 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:05:01 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:05:01 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:26:57 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//convert ASCII string to integer
 
 int	ft_atoi(const char *str)
 {

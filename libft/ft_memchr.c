@@ -6,13 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:04:18 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:04:18 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:26:47 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//locate byte in byte string
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
