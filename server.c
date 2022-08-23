@@ -6,11 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 10:38:44 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:00:40 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:08:25 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"j
+#include "minitalk.h"
 
 void	usrhandler(int signum, siginfo_t *info, void *context);
 
