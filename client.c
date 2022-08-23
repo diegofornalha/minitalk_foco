@@ -6,7 +6,7 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:01:12 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:16:32 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:21:52 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int argc, char *argv[])
 	signal(SIGUSR2, ft_return);
 	if ((argc != 3) || (!ft_isalldigit(argv[1])))
 	{
-		ft_printf("\e[38;5;196mERROR: \e[mincorrect argument!\e[38;5;87m\n");
+		ft_printf("incorrect argument!\n");
 		ft_printf("NOTE: \e[mCorrect Argument format [./client <PID> <STR>]\n");
 		exit(EXIT_FAILURE);
 	}
