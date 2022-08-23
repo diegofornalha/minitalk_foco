@@ -6,15 +6,15 @@
 #    By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/23 13:01:30 by dida-sil          #+#    #+#              #
-#    Updated: 2022/08/23 14:20:13 by dida-sil         ###   ########.fr        #
+#    Updated: 2022/08/23 14:44:06 by dida-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # +>                                     NAMES 
 
-NAME		= libft.a
+NAME		= libft.a 
 
-PRINTF		= libftprintf.a
+PRINTF		= libftprintf.a 
 
 PRINTF_DIR	= ft_printf/
 # <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
@@ -70,12 +70,12 @@ MAKEFLAGS	+= --silent
 # <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
 # +>                                     RULES 
 
-all:		$(NAME)
+all:	$(NAME)
 
-$(NAME):	 $(OBJS) $(PRINTF)
+$(NAME): $(OBJS) $(PRINTF)
 	$(AR) $(NAME) $(OBJS)
 	
-$(PRINTF):	$(PRINTF_DIR)$(PRINTF)
+$(PRINTF): $(PRINTF_DIR)$(PRINTF)
 	cp $(PRINTF_DIR)$(PRINTF) ./$(NAME)
 
 $(PRINTF_DIR)$(PRINTF):
@@ -91,7 +91,7 @@ fclean:	clean
 
 	$(RM) $(PRINTF_DIR)$(PRINTF)
 
-re:			recompiling fclean all
+re:	recompiling fclean all
 
 compiled:
 	printf "[$(NAME)] Compiled!\n"
