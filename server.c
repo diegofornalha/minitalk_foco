@@ -6,13 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 10:38:44 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:08:25 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:19:52 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
-
-void	usrhandler(int signum, siginfo_t *info, void *context);
 
 int	main(void)
 {
@@ -22,8 +20,8 @@ int	main(void)
 	usr_h.sa_flags = SA_SIGINFO | SA_RESTART;
 	sigaction (SIGUSR1, &usr_h, NULL);
 	sigaction (SIGUSR2, &usr_h, NULL);
-	ft_printf("\e[38;5;112;1mStarted Process!\e[m\n");
-	ft_printf ("PID: \e[38;5;112;1m%d\e[m\n", getpid());
+	ft_printf("Started Process!\n");
+	ft_printf ("PID: %d\n", getpid());
 	while (1)
 		pause();
 	return (1);

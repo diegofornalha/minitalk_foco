@@ -6,17 +6,11 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:01:12 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 13:01:59 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 13:16:32 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
-
-void	ft_return(int signum);
-
-int		ft_isalldigit(char	*str);
-
-void	ft_atobin(char c, pid_t n_pid);
 
 int	main(int argc, char *argv[])
 {
