@@ -6,7 +6,7 @@
 #    By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/23 13:05:06 by dida-sil          #+#    #+#              #
-#    Updated: 2022/08/23 13:05:06 by dida-sil         ###   ########.fr        #
+#    Updated: 2022/08/23 14:20:19 by dida-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,28 +35,7 @@ CC			= cc
 INCLUDE		= -I $(LIB)
 CFLAGS		= -g -Wall -Wextra -Werror
 MAKEFLAGS	+= --silent
-# <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
-# +>                                  TEXT CODES
 
-BLANK		= \e[m
-RED			= \e[38;5;9m
-YELLOW		= \e[38;5;11m
-GREEN		= \e[38;5;2m
-BLUE		= \e[38;5;6m
-PURPLE		= \e[38;5;5m
-PINK		= \e[38;5;13m
-WHITE		= \e[38;5;15m
-
-BOLD		= \e[1m
-SHADOW		= \e[2m
-ITALIC		= \e[3m
-UNDLINE		= \e[4m
-UPPLINE		= \e[53m
-DUNDLINE	= \e[21m
-CENSORED	= \e[9m
-UPALIGN		= \e[73m
-DWALIGN		= \e[74m
-FULLER		= \e[7m
 # <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
 # +>                                     RULES
 
@@ -65,28 +44,16 @@ FULLER		= \e[7m
 
 all:		$(NAME)
 
-$(NAME):	checking $(OBJS)
-	printf "[$(BLUE)$(UNDLINE)Objects of $(NAME)$(BLANK)] $(GREEN)Has Been $(BOLD)Compiled!$(BLANK)\n"
+$(NAME):$(OBJS)
 	$(AR) $(NAME) $(OBJS)
-	printf "[$(BLUE)$(UNDLINE)$(NAME)$(BLANK)] $(GREEN)Has Been $(BOLD)Created!$(BLANK)\n"
-
 clean:
 	$(RM) $(OBJS)
-	printf "[$(BLUE)$(UNDLINE)Objects of $(NAME)$(BLANK)] $(YELLOW)Has Been $(BOLD)Deleted!$(BLANK)\n"
-
 
 fclean:		clean
 	$(RM) $(NAME)
-	printf "[$(BLUE)$(UNDLINE)$(NAME)$(BLANK)] $(RED)Has Been $(BOLD)Deleted!$(BLANK)\n"
 
 re:			recompiling fclean all
 
-checking:
-	printf "$(BOLD)Checking [$(BLUE)$(UNDLINE)Objects of $(NAME)$(BLANK)]...\n"
-
-recompiling:
-	printf "[$(BLUE)$(UNDLINE)$(NAME)$(BLANK)] is Being $(BOLD)Recompiled$(BLANK)...\n"
-
 .PHONY:		all clean fclean re
 # <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
-# vim: fdm=marker fmr=+>,<+ ts=4 sw=4 nofen noet:
+

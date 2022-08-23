@@ -6,7 +6,7 @@
 #    By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/23 13:01:30 by dida-sil          #+#    #+#              #
-#    Updated: 2022/08/23 13:01:58 by dida-sil         ###   ########.fr        #
+#    Updated: 2022/08/23 14:20:13 by dida-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,37 +66,15 @@ CC			= cc
 MAKE		= make -C
 CFLAGS		= -g -Wall -Wextra -Werror
 MAKEFLAGS	+= --silent
-# <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
-# +>                                   TXT CODE 
 
-BLANK			= \e[m
-RED				= \e[38;5;9m
-YELLOW			= \e[38;5;11m
-GREEN			= \e[38;5;2m
-BLUE			= \e[38;5;6m
-PURPLE			= \e[38;5;5m
-PINK			= \e[38;5;13m
-WHITE			= \e[38;5;15m
-
-STRONG			= \e[1m
-SHADOW			= \e[2m
-ITALIC			= \e[3m
-UNDLINE			= \e[4m
-UPPLINE			= \e[53m
-DUNDLINE		= \e[21m
-CENSORED		= \e[9m
-UPALIGN			= \e[73m
-DWALIGN			= \e[74m
-FULLER			= \e[7m
 # <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
 # +>                                     RULES 
 
 all:		$(NAME)
 
-$(NAME):	checking $(OBJS) compiled $(PRINTF)
+$(NAME):	 $(OBJS) $(PRINTF)
 	$(AR) $(NAME) $(OBJS)
-	printf "[$(BLUE)$(UNDLINE)$(NAME)$(BLANK)] $(GREEN)Has Been $(BOLD)Created!$(BLANK)\n"
-
+	
 $(PRINTF):	$(PRINTF_DIR)$(PRINTF)
 	cp $(PRINTF_DIR)$(PRINTF) ./$(NAME)
 
@@ -105,26 +83,18 @@ $(PRINTF_DIR)$(PRINTF):
 
 clean:
 	$(RM) $(OBJS)
-	printf "[$(BLUE)$(UNDLINE)Objects of $(NAME)$(BLANK)] $(YELLOW)Has Been $(BOLD)Deleted!$(BLANK)\n"
+
 	$(MAKE) $(PRINTF_DIR) clean
 
 fclean:	clean
 	$(RM) $(NAME)
-	printf "[$(BLUE)$(UNDLINE)$(NAME)$(BLANK)] $(RED)Has Been $(BOLD)Deleted!$(BLANK)\n"
+
 	$(RM) $(PRINTF_DIR)$(PRINTF)
-	printf "[$(BLUE)$(UNDLINE)libftprintf.a$(BLANK)] $(RED)Has Been $(BOLD)Deleted!$(BLANK)\n"
 
 re:			recompiling fclean all
 
-checking:
-	printf "$(BOLD)Checking [$(BLUE)$(UNDLINE)Objects of $(NAME)$(BLANK)]...\n"
-
 compiled:
-	printf "[$(BLUE)$(UNDLINE)Objects of $(NAME)$(BLANK)] $(GREEN)Has Been $(BOLD)Compiled!$(BLANK)\n"
-
-recompiling:
-	printf "[$(BLUE)$(UNDLINE)$(NAME)$(BLANK)] is Being $(BOLD)Recompiled$(BLANK)...\n"
+	printf "[$(NAME)] Compiled!\n"
 
 .PHONY:		all clean fclean re
 # <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
-# vim: fdm=marker fmr=+>,<+ ts=4 sw=4 nofen noet:
