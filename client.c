@@ -6,7 +6,7 @@
 /*   By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 13:01:12 by dida-sil          #+#    #+#             */
-/*   Updated: 2022/08/23 14:26:10 by dida-sil         ###   ########.fr       */
+/*   Updated: 2022/08/23 14:27:22 by dida-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	ft_atobin(char c, pid_t n_pid)
 			kill (n_pid, SIGUSR2);
 		else
 			kill (n_pid, SIGUSR1);
-		usleep(250);
+		usleep(300);
 	}
 }
 
