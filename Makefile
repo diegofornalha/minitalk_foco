@@ -6,7 +6,7 @@
 #    By: dida-sil <dida-sil@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/23 13:01:05 by dida-sil          #+#    #+#              #
-#    Updated: 2022/08/23 14:34:52 by dida-sil         ###   ########.fr        #
+#    Updated: 2022/08/24 19:19:03 by dida-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,9 +18,10 @@ CLIENT		= client
 
 SERVER		= server
 
-LIBFT		= libft.a 
+LIBFT		= libft.a
 
 LIBFT_DIR	= libft/
+
 # <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
 # +>                                     SRCS 
 
@@ -31,6 +32,7 @@ SRV_SRCS	= server.o
 CLT_OBJS	= $(CLT_SRCS:.c=.o)
 
 SRV_OBJS	= $(SRV_SRCS:.c=.o)
+
 # <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
 # +>                                    ALIASES 
 
@@ -45,6 +47,8 @@ MAKEFLAGS	+= --silent
 # +>                                     RULES 
 
 all:		$(NAME)
+
+bonus:		$(NAME)
 
 $(NAME):	$(LIBFT) $(CLIENT) $(SERVER)
 
@@ -78,4 +82,5 @@ srv_checking:
 	printf "$(SERVER) ON\n"
 
 .PHONY:		all clean fclean re
+
 # <+-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-'-.-' #
